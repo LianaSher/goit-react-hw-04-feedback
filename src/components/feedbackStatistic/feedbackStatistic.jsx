@@ -1,5 +1,5 @@
 import { Component } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { FeedbackOptions } from "../FeedbackOptions/FeedbackOptions";
 
 export class Feedbacks extends Component {
@@ -21,7 +21,7 @@ export class Feedbacks extends Component {
         return (
             
             <><h2>Please leave feedback</h2>
-                    <FeedbackOptions leaveFeedback={this.leaveFeedback}/>
+                    <FeedbackOptions options={Object.keys(this.state)}  leaveFeedback={this.leaveFeedback}/>
             
                 <h2>Statistics</h2>
             <ul>
