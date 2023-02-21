@@ -5,12 +5,8 @@ export const FeedbackOptions = ({leaveFeedback, options}) => {
     return (
 
         <div>
-           
+            {options.map((option) => { return <button onClick={() => leaveFeedback(option)} type="button">{option}</button> })}
         </div>
-        // <div>
-        //     <button onClick={()=>leaveFeedback("good")} type="button">Good</button>
-        //         <button onClick={()=>leaveFeedback("neutral")} type="button">Neutral</button>
-        //         <button onClick={()=>leaveFeedback("bad")} type="button">Bad</button>
-        // </div>
+        
     );
 }
