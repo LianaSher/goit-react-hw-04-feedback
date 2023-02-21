@@ -1,5 +1,6 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
+import { FeedbackOptions } from "../FeedbackOptions/FeedbackOptions";
 
 export class Feedbacks extends Component {
     state = {
@@ -16,13 +17,12 @@ export class Feedbacks extends Component {
     }
 
     render() {
+        
         return (
+            
             <><h2>Please leave feedback</h2>
-            <ul>
-                    <li><button onClick={() => {this.leaveFeedback("good")}}>Good</button></li>
-                <li><button onClick={() => {this.leaveFeedback("neutral")}}>Neutral</button></li>
-                <li><button onClick={() => {this.leaveFeedback("bad")}}>Bad</button></li>
-                </ul>
+                    <FeedbackOptions leaveFeedback={this.leaveFeedback}/>
+            
                 <h2>Statistics</h2>
             <ul>
                     <li>Good: {this.state.good}</li>
