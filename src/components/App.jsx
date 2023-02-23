@@ -5,6 +5,8 @@ import { Section } from "../components/Section/Section";
 
 import { Component } from "react";
 
+
+
 export class App extends Component {
   state = {
     good: 0,
@@ -49,15 +51,3 @@ export class App extends Component {
 }
 }
 
-// export const App = () => {
-//   return (
-    
-//       <Section title={"Please leave feedback"}>
-//       <Feedbacks />
-//       <GlobalStyle/>
-//         </Section>
-      
-      
-    
-//   );
-// };
