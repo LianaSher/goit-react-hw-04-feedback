@@ -6,7 +6,6 @@ import {
 } from '../FeedbackOptions/feedbackOptions.styled';
 
 export const FeedbackOptions = ({ leaveFeedback, options }) => {
-  console.log(leaveFeedback);
   return (
     <OptionsContainer>
       {options.map((option, index) => {
